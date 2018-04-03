@@ -1,1 +1,2 @@
-# -Altarix_course
+Никита Шальнев 
+shalnev.itistrue@yandex.ru
