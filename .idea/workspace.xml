@@ -14,11 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Debug.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Debug.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Debug.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            <state relative-caret-position="69">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="5Lecture.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/5Lecture.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="8" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -48,9 +57,10 @@
         <option value="$PROJECT_DIR$/2 Array.js" />
         <option value="$PROJECT_DIR$/1Calc.js" />
         <option value="$PROJECT_DIR$/2Array.js" />
-        <option value="$PROJECT_DIR$/3Numb.js" />
         <option value="$PROJECT_DIR$/4Calend.js" />
+        <option value="$PROJECT_DIR$/3Numb.js" />
         <option value="$PROJECT_DIR$/Debug.html" />
+        <option value="$PROJECT_DIR$/5Lecture.js" />
       </list>
     </option>
   </component>
@@ -143,25 +153,27 @@
       <workItem from="1524072253155" duration="868000" />
       <workItem from="1524217411656" duration="15817000" />
       <workItem from="1524290778977" duration="7690000" />
+      <workItem from="1524480250058" duration="2644000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31565000" />
+    <option name="totallyTimeSpent" value="34209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.08046875" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08046875" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5023438" side_tool="true" visible="true" weight="0.24712643" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.503125" side_tool="true" visible="true" weight="0.3137931" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49947917" weight="0.32893497" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49765626" weight="0.24712643" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.496875" visible="true" weight="0.3137931" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -192,18 +204,17 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Debug.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/3Numb.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
           <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-          <folding>
-            <element signature="e#449#696#0" />
-            <element signature="e#728#951#0" />
-            <element signature="e#983#1182#0" />
-            <element signature="e#1214#1389#0" />
-            <element signature="e#1421#1572#0" />
-            <element signature="e#1604#1731#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -253,21 +264,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3Numb.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-          <folding>
-            <element signature="e#449#696#0" />
-            <element signature="e#728#951#0" />
-            <element signature="e#983#1182#0" />
-            <element signature="e#1214#1389#0" />
-            <element signature="e#1421#1572#0" />
-            <element signature="e#1604#1731#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/4Calend.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -275,10 +271,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/3Numb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="920">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Debug.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        <state relative-caret-position="69">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/5Lecture.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="8" selection-end-column="24" />
         </state>
       </provider>
     </entry>
