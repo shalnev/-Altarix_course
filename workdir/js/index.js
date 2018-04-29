@@ -1,0 +1,2 @@
+import username;
+username = "Вася";
