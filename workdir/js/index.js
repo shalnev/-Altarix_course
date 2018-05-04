@@ -1,2 +1,3 @@
-import username;
-username = "Вася";
+import test from "./other"
+
+test()

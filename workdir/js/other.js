@@ -1,2 +1,3 @@
-export  var username;
-alert(username);
+export default function test(name = 'noname') {
+    console.log(name)
+}

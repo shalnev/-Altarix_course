@@ -1,15 +1,27 @@
-var path = require('path');
-var Person = require("babel!./Person.js").default;
-new Person();
+const  path = require("path");
+
+
 module.exports = {
-    entry: './js/index.js',
+    devtool: "source-map",
+    entry: "./js/index.js",
     output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist')
+        path: path.join(__dirname, "build"),
+        filename: "bundle.js",
+        publicPath: "/build/"
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js/,
+                use: [
+                    {
+                        loader: "babel-loader",
+                        options: {
+                            presets: ["env"]
+                        }
+                    }
+                ]
+            }
+        ]
     }
-};
-module: {
-    rules: [
-        { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" }
-    ]
 }
