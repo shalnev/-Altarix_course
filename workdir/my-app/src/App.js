@@ -16,9 +16,16 @@ import './App.css';
 //   }
 // }
 
-var login = "Морти";
+var login = "Никита Шальнев";
 
-class Parallelogram extends Component {
+class UserListContainer extends Component{
+    constructor(){
+        super();
+        this.state=
+    }
+}
+
+class Parallelogram extends Component {    //объединяющий компонент вёрстки
     render() {
         return (<div className="body">
             <Head/>
@@ -62,8 +69,7 @@ class Message extends Component {         //Отправленное одно с
 class InputZone extends Component {        //Инпут зона
     render() {
         return (<div className="footer">
-            <textarea autoFocus id="inputFromUser" className="footer__textarea" type="text"
-                      value="Написать сообщение..." onfocus="this.value=''">
+            <textarea autoFocus id="inputFromUser" className="footer__textarea" type="text">
             </textarea>
             < button className="footer__button">Отправить</button>
         </div>);
