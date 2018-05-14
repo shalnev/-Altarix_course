@@ -9,7 +9,7 @@ class InputForm extends Component {
     }
     render() {
         return (
-            <form className="fixed-bottom" onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit}>
                 <input autoFocus id="input" className="form-control" type="text" placeholder="Отправьте сообщение...">
                 </input>
             </form>);

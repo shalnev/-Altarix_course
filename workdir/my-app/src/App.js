@@ -11,7 +11,7 @@ class App extends Component {
         messages = {
             id: now,
             name: 'Никита Шальнев',
-            text: this.state.text
+            text: messages
         };
         db.ref(`/messages/${now}`).set(messages);
     }
@@ -25,28 +25,15 @@ class App extends Component {
             text: message[key].text
         }));
             this.setState({
-            message:messagesOut})
+            posts:messagesOut})
         })
     }
     render() {
         return (<div className="App">
-            <header className="display-3">Никита Шальнев</header>
+            <header className="display-4">Никита Шальнев</header>
             <MessagesList posts={this.state.posts} />
             <InputForm newMessage={this.newMessage}/>
         </div>);
     }
 }
 export default App;
-// id: Date.now(),
-// name: this.state.myName,
-// text: message
-// this.state.posts.push({    //добавляет объект из id, name, text в конец массива posts
-//         id: now,
-//         name: 'Никита Шальнев',
-//         text: this.state.text
-//     }
-// db.ref(`/messages/${now}`).set(message);
-// }
-// this.setState({
-//     posts: this.state.posts
-// }
