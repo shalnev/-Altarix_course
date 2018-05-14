@@ -1,63 +1,52 @@
 import React, {Component} from 'react';
 import './App.css';
+import InputForm from './components/InputForm'
+import MessagesList from './components/MessagesList'
+import { db } from './firebase';
 
-var login = "Никита Шальнев";
-
-
-class Parallelogram extends Component {    //объединяющий компонент вёрстки
+class App extends Component {
+    state = {posts: []};
+    newMessage = messages => {
+        const now = Date.now();
+        messages = {
+            id: now,
+            name: 'Никита Шальнев',
+            text: this.state.text
+        };
+        db.ref(`/messages/${now}`).set(messages);
+    }
+    componentDidMount(){
+        const messagesRef = db.ref('messages');
+        messagesRef.on('value', (snapshot) => {
+            const message = snapshot.val();
+            const messagesOut = Object.keys(message).map(key => ({
+            id: key,
+            name: message[key].name,
+            text: message[key].text
+        }));
+            this.setState({
+            message:messagesOut})
+        })
+    }
     render() {
-        return (<div className="body">
-            <Head/>
-            <Content/>
-            <InputZone/>
+        return (<div className="App">
+            <header className="display-3">Никита Шальнев</header>
+            <MessagesList posts={this.state.posts} />
+            <InputForm newMessage={this.newMessage}/>
         </div>);
     }
 }
-
-class Head extends Component {           //Шапка со своим никнеймом
-    render() {
-        return (
-            <header className="header">
-                <h1 className="header__h1">{login}</h1>
-            </header>
-        );
-    }
-}
-
-class Content extends Component {         //окошко с сообщениями
-    render() {
-        return (
-            <main className="main">
-                <Message/>
-            </main>);
-    }
-}
-
-var textMessage = "Привет, как спиться?";
-
-class Message extends Component {         //Отправленное одно сообщение
-    render() {
-        return (
-            <div className="message__block">
-                <p>{login}:</p>
-                <p className="message__text">{textMessage}</p>
-            </div>);
-    }
-}
-
-class InputZone extends Component {        //Инпут зона
-    render() {
-        return (<div className="footer">
-            <textarea autoFocus id="inputFromUser" className="footer__textarea" type="text">
-            </textarea>
-            < button className="footer__button">Отправить</button>
-        </div>);
-    }
-}
-
-// document.getElementById("inputFromUser").value = textMessage;
-
-
-export default Parallelogram;
-
-
+export default App;
+// id: Date.now(),
+// name: this.state.myName,
+// text: message
+// this.state.posts.push({    //добавляет объект из id, name, text в конец массива posts
+//         id: now,
+//         name: 'Никита Шальнев',
+//         text: this.state.text
+//     }
+// db.ref(`/messages/${now}`).set(message);
+// }
+// this.setState({
+//     posts: this.state.posts
+// }
